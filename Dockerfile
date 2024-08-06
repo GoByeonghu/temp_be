@@ -1,5 +1,6 @@
 # Step 1: Use a Maven base image to build the application
-FROM gradle:7.3.1-jdk17
+#FROM gradle:7.3.1-jdk17
+FROM openjdk:17-jdk-alpine
 
 #작업 디렉토리 설정
 WORKDIR /home/gradle/project
