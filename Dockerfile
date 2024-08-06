@@ -15,3 +15,5 @@ RUN ./gradlew clean build -x test
 
 # 빌드 결과 jar 파일을 실행
 CMD ["java", "-jar", "-Dspring.profiles.active=prod", "/home/gradle/project/build/libs/mungpy-0.0.1-SNAPSHOT.jar"]
+
+EXPOSE 8080
