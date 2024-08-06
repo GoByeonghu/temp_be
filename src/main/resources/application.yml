@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: mungpy
+  datasource:
+    url: jdbc:mysql://localhost:3306/mungpy
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+
+cors:
+  allowed:
+    origin: http://localhost:3000/
+
+openaiapi:
+  secret-key: steven_kevin_ andy_elle
